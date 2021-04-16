@@ -2,8 +2,6 @@ const dotenv = require('dotenv-extended');
 dotenv.load();
 const express = require('express');
 const app = express();
-const loginRouter = require('./routers/loginRouter');
-const cardRouter = require('./routers/cardRouter');
 const logger = require('./logger');
 const moment = require('moment');
 moment.locale('pt-br');
@@ -40,7 +38,5 @@ if (process.env.ENV_STAGE !== 'test') {
 }
 
 app.use(express.json());
-app.use(loginRouter);
-app.use(cardRouter);
 
 module.exports = app;
