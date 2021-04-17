@@ -17,7 +17,7 @@ exports.insertCards = async (req, res, next) => {
 
       if (!title || !content || !list) {
         throw new BadRequest('Missing required fields');
-      };
+      }
 
       const card = await cardService.insertCard(title, content, list);
 
@@ -34,7 +34,7 @@ exports.updateCards = async (req, res, next) => {
 
         if (!title || !content || !list) {
           throw new BadRequest('Missing required fields');
-        };
+        }
 
         const updatedCard = await cardService.updateCard(id, title, content, list);
 

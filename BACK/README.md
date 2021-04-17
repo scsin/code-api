@@ -45,5 +45,5 @@ Faça o login pela rota `/login` enviando as credenciais no body:
 
 
 ## Considerações
-- Foi adicionada uma rota de criação de usuário somente para fins de teste.
+- Foi adicionada uma rota `/user` de criação de usuário somente para fins de teste.
 - Fiz uma versão simplificada de log para as requisições.

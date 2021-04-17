@@ -1,5 +1,5 @@
 module.exports = {
-    database: "codeapi",
+    database: 'codeapi',
     username: 'codeapi',
     password: 'codeapi',
     storage: './database/database.sqlite',

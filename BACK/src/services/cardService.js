@@ -1,6 +1,6 @@
 const { Card } = require('../models/cardModel');
 const { find } = require('../functions/find');
-const { BadRequest, GeneralError } = require('../utils/error');
+const { GeneralError } = require('../utils/error');
 
 exports.getAllCards = async () => {
     let allCards;
@@ -20,7 +20,7 @@ exports.insertCard = async (title, content, list) => {
     try {
         card = await Card.create({ title, content, list });
     } catch (error) {
-        throw new GeneralError(`Card not created`);
+        throw new GeneralError('Card not created');
     }
 
     return card;
