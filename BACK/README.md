@@ -1,22 +1,34 @@
 # Getting Started - Let's Code API
 
-- crie um `.env` a partir do `.env.schema`
+- Crie um `.env` a partir do `.env.schema`, e preencha as variáveis:
 ```
-npm install
+ADMIN_LOGIN=
+ADMIN_PASSWORD=
+JWT_KEY=
+```
+
+Na raiz do projeto insira os seguintes comandos:
+```
 cd BACK/
+npm install
 ```
 
 ### Rodando localmente
 ```
-~/BACK npm run dev
+npm run dev
 ```
 
 ### Rodando com Docker
 ```
-~/BACK docker build . -t codeapi
-~/BACK docker run -p 5000:5000 -d codeapi
+docker build . -t codeapi
+docker run -p 5000:5000 -d codeapi
 ```
 
+### Rodando os testes
+Para visualização dos testes sem interferências do logger, troque a variável de ambiente `ENV_STAGE` para `test` e insira o comando:
+```
+npm test
+```
 
 ## Stack
 Esse projeto foi construído utilizando:
