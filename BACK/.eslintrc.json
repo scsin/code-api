@@ -1,0 +1,22 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 12
+    },
+    "rules": {
+        "linebreak-style": 0,
+        "max-len": [
+          2,
+          180
+        ],
+        "quotes": ["error", "single"],
+        "key-spacing": ["error", { "afterColon": true }],
+        "eol-last": ["error", "always"]
+    }
+}
